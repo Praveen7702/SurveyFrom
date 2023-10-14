@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h2>Survey Form</h2>
+
+    
+    <form id="surveyForm">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Vinay" required>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Kumar" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+        </div>
+
+        <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country" required>
+                <option>Select</option>
+                <option>London</option>
+                <option>India</option>
+                <option>America</option>
+                <option>United State</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label><br>
+            <div class="form-inline" id="gender">
+            <input type="checkbox" id="male" name="gender" value="male" >
+            <label for="male">Male</label>
+            <input type="checkbox" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div class="form-group">
+            <label for="profession">Profession</label>
+            <input type="text" id="profession" placeholder="Eg: Engineer, Accountant." required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="abc@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile"  placeholder="0000000000" required>
+        </div>
+<center>
+        <div class="form-group">
+            <button type="button" id="resetBtn">Reset</button>
+            <button type="button" id="submitBtn">Submit</button>
+        </div></center>
+    </form>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <!-- <h2>Survey Form Submission</h2> -->
+            <div id="popup-data"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
